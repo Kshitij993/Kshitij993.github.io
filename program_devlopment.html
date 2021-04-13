@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Java Programming</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the side navigation */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  padding-top: 1.5cm;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(122, 108, 122);
+  overflow-x: hidden;
+}
+p {
+  text-align: justify;
+}
+.image {
+  padding-left: 5cm;
+}
+
+/* Side navigation links */
+.sidenav a {
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+  padding-right: 3cm;
+}
+</style>
+<link href="./assets/carousel.css" rel="stylesheet">
+<link href="./assets/style.css" rel="stylesheet">
+<link href="./assets/size.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">KKS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./blogs.html">Blogs</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li> -->
+        </ul>
+        <form class="d-flex">
+          <a class="btn btn-outline-success" href="./donate.html" role="button">Donate</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+<br>
+<div class="sidenav">
+  <a href="./blogs.html">Origin of Java</a>
+  <a href="./challanges.html">Challanges of Java</a>
+  <a href="./features.html">Features of Java</a>
+  <a href="./JDK.html">JDK</a>
+  <a href="./JRE.html">JRE</a>
+  <a href="./JVM.html">JVM</a>
+  <a href="./oop.html">Object Oriented Programming</a>
+  <a href="./joop.html">Java Object Oriented Programming</a>
+  <a href="./program_devlopment.html">Java Program development</a>
+</div>
+<div class="content">
+  <h2>Java Program Developement </h2>
+  <h4>Agenda</h4>
+  <p>
+    <ul style="list-style-type: square;">
+        <li>Elements of a Java Program</li>
+        <li>Java API</li>
+        <li>Variables and Literals</li>
+        <li>Primitive Data Types</li> 
+        <li>The String Class</li> 
+        <li>Operators</li> 
+        <li>Combined Assignment Operators </li>
+        <li>Conversion Between Primitive Data Types </li>
+        <li>Constants</li>
+        <li>Scope of Variables and Blocks</li>
+        <li>Comments</li>
+        <li>Understanding Keyboard Input </li>
+    </ul>
+    <h4>Elements of a Java Program</h4>    
+    <div class="image">
+        <img src="./kshitij/img5.png">
+    </div>
+    <ul style="list-style-type: square;">
+    <li>To compile the program using command line argument for the program FirstProgram.java, the method is as follows
+        <ul>
+                C:\>javac FirstProgram.java
+        </ul>
+    </li> 
+    <li>
+        The javac is a compiler which compiles the program FirstProgram.java and converts the source program into bytecode in a file FirstProgram.class.
+
+    </li>
+    <li>
+        The bytecode is the first step in the process of execution of the program. The second step is to execute the .class file using an interpreter as follows:
+        <ul>
+            C:\>java FirstProgram
+        </ul>
+    </li>
+    <li>
+        This command executes the program and the result is shown in Output
+    </li>
+    <div class="image">
+        <img src="./kshitij/img6.png">
+    </div>
+</ul>
+   
+       <h4>Java API</h4>
+       <ul style="list-style-type: square;">
+       <li>Java provides an Application Program Interface (API) which is a collection of classes used to develop programs.
+        </li>
+       <li>API includes all packages, classes and interfaces. Packages are a library of classes that are used to keep the class name space as a group. 
+    </li>
+    <li>Packages are created by grouping classes and then used in a program without moving the classes to the workspace.
+    </li>
+    <li>To use a class from Java API, include an import statement at the start of the program. 
+        <ul>
+            importjava.util.Scanner;
+        </ul>
+    </li>
+    <li>Here, the import statement gets access to the Scanner class defined under a sub package called util, which is again grouped in the Java package. 
+    </li>
+    <li>Some of the more frequently used packages are:
+        <ul>
+            <li>java.lang 		
+            </li>
+            <li>java.awt.event	
+            </li>
+            <li>java.io
+            </li>
+            <li>javax.swing
+            </li>
+            <li>java.util
+            </li>
+        </ul>
+    </li>
+   </ul>
+   
+     <h4>Variables and Literals</h4>
+     <ul style="list-style-type: square;">
+     <li>A variable is a titled portion of the memory used to store data that is used in any program that may even be other than Java. A variable can store only one type of data.
+    </li>
+    <li>The type of data stored in a variable is predefined by Java. 
+    </li>
+    <li>A variable has a range of values it can accommodate; the type of data it can store and the type of operations performed are verified by the compilation process.
+    </li>
+    <li>Rules to be followed to name a variable:
+        <ul>
+            <li>The name of a variable may be of any length depending on the system requirements.
+            </li>
+            <li>The name must start with an alphabet, underscore (_) or a dollar symbol ($).
+            </li>
+            <li>The remaining characters of the identifier can be alphabets or numeric.
+            </li>
+            <li>Special characters such as @, % etc., are not allowed as part of the identifier name.
+            </li>
+            <li>Underscore (_) can be used to connect two words such as first_name.
+            </li>
+            <li>As mentioned earlier, Java is case sensitive; hence, the identifiers average and Average are treated as two different variables.
+            </li>
+            <li>Blanks or tabs may not be used in identifier names.
+            </li>
+        </ul>
+    </li>
+    <li>Naming a variable should reflect the purpose for which it is declared in a program.
+    </li>
+    <li>
+        In Java, the naming convention followed is
+        <ul>
+            <li>the variable name starts with a lowercase alphabet
+            </li>
+            <li>for the remaining words, the first alphabet is in upper case 
+            </li>
+        </ul>
+    </li>
+    <li>It is not compulsory to follow the above convention to name a variable and  programmers can use any naming convention. However, they must follow the rules for naming a variable.
+    </li>
+   </ul>
+   <h4>Primitive Data Types </h4>
+   <ul style="list-style-type: square;">
+    <li><h5>Integer Variable</h5></li>
+       <div class="image">
+            <img src="./kshitij/img7.png">
+       </div>
+       <li><h5>Floating-point Variables</h5></li>
+       <div class="image">
+            <img src="./kshitij/img8.png">
+       </div>
+       <li><h5>Character Variables</h5></li>
+       <div class="image">
+            <img src="./kshitij/img9.png">
+       </div>
+       <li><h5>Boolean Variables</h5>
+        <ul>
+            <li>The Boolean variable has only two values: true or false. 
+            </li>
+            <li>
+                These two values are Boolean constants. 
+            </li>
+            <li>For example, a Boolean variable may be declared as follows
+                <ul>
+                    Boolean employed = true;
+
+                </ul>
+            </li>
+        <li>The above statement declares a Boolean variable employed and initializes it with the Boolean value true. 
+        </li>
+        <li>The Boolean variable can be reassigned by another value as follows
+            <ul>employed = false;
+            </ul>
+        </li>
+        </ul>
+       </li>
+    <li><h5>Assignment Statement</h5>
+    <ul>
+        <li>The equal(=) sign is used as the assignment operator.
+        </li>
+        <li>The assignment operator has a Right Hand Side (RHS) and Left Hand Side (LHS). 
+        </li>
+        <li>The RHS must be a variable and the LHS may have constant or variable or expression. 
+        </li>
+        <li>If the assignment statement has a constant on the LHS, the value is assigned to the RHS variable. 
+        </li>
+        <li>If it has a variable on the LHS, the value of the variable is assigned to the RHS variable. 
+        </li>
+        <li>If the LHS has an expression, it is evaluated and the result is assigned to the RHS variable.
+        </li>
+    </ul>
+    </li>
+   </ul>
+   <h4>The String Class</h4>
+   <ul style="list-style-type: square;">
+       <li>To store a group of characters, Java provides the predefined class called String. 
+    </li>
+    <li>The String class helps to create and manipulate strings. </li>
+    <li>The String class is a default package which is available to all the programs and there is no need to import this package.
+    </li>
+   </ul>
+   <div class="image">
+    <img src="./kshitij/img10.png">
+    </div>
+ <h4>Operators</h4>
+ <ul style="list-style-type: square;">
+    <li>Operator is a symbol that informs the compiler to perform some operation on the given data. 
+    </li>
+    <li>There are several operators provided by Java. 
+    </li>
+    <li>The operators can be classified into four categories
+        <ul>
+            <li>Arithmetic
+            </li>
+            <li>Relational
+            </li>
+            <li>Logical 
+            </li>
+            <li>Bitwise.
+            </li>
+        </ul>
+    </li>
+</ul>
+    <ul style="list-style-type: square;">
+            <li><h5>Arithmetic Operators</h5></li>
+            <div class="image">
+                <img src="./kshitij/img11.png">
+            </div>
+            <li><h5>Relational Operators</h5></li>
+            <div class="image">
+                <img src="./kshitij/img12.png">
+            </div>
+            <li><h5>Bitwise Operators</h5></li>
+            <div class="image">
+                <img src="./kshitij/img13.png">
+            </div>
+            <li><h5>Arithmetic Operators</h5></li>
+            <div class="image">
+                <img src="./kshitij/img11.png">
+            </div>
+        </ul>
+    <h4>Combined Assignment Operators</h4>
+      <div class="image">
+          <img src="./kshitij/img14.png">
+      </div>
+    <h4>Conversion Between Primitive Data Types</h4>
+    <ul style="list-style-type: square;">
+        <li>Type conversion, also called Type Casting, takes place when one primitive data type value is assigned to another primitive data type.
+        </li>
+        <li>
+            The primitive data types are arranged in a sequence as follows based on the number of bytes each one occupies 
+        </li>
+        <img src="./kshitij/img15.png">
+        <li>The type conversion takes place for the above primitive data types in reverse order automatically.
+        </li>
+    </ul>
+    <h4>Constants</h4>
+    <ul>
+        A value that does not change during the execution of a program is called a constant
+        <ul style="list-style-type: square;">
+            <li><h5>Integer Constant            </h5> 
+               <ul style="list-style-type: circle;">
+                    <li>Any type of value is called a constant or literal. Integer constants are of the type int or long, and can be specified as a sequence of digits.
+                </li>
+                     <li>An integer constant can represent its value in four different ways, namely, decimal, hexadecimal, octal and binary.
+                </li>  
+                     <li>In the hexadecimal number system, the integer value is represented by prefixing the value with either 0x or 0X and followed by its digits 0 to 9 and A to F in  place of 10 to 15.
+                </li>
+                     <li>The long integer value is appended by uppercase or lowercase L.
+                </li>
+                <li>The binary value is represented by prefixing the value with 0b or 0B and followed by its digits.
+                </li>
+               </ul>
+            </li>
+            <li><h5>Floating-point Constant</h5>
+                <ul  style="list-style-type: circle;">
+                 <li>By default, float constants are of double type. For example, the float value 4.5 is a double type. 
+                 </li>
+                 <li>To be represented as a float value, the floating-point constants can be appended with uppercase or lowercase F. 
+
+                 </li>
+                 <li>The larger value of a floating-point constant can be represented using an exponent. 
+
+                 </li>
+                 <li>This representation can use either power of X10 or E or e.
+                 </li>
+                </ul>
+             </li>
+        </ul>
+    </ul>
+    <h4>Scope of Variables and Blocks</h4>
+    <ul style="list-style-type: square;">
+        <li>The block is a code enclosed within the opening curly brace and closing curly brace. 
+        </li>
+        <li>The visibility of these variables is only within this block; if these variables are accessed outside the block, the compiler will report an error message “undefined symbol”. 
+        </li>
+        <li>Scope is a block of code where a variable is declared and within which it can be accessed. 
+        </li>
+        <li>The lifetime of a variable is only within the block where it is declared. 
+        </li>
+    </ul>
+ <h4>Comments</h4>
+  <ul style="list-style-type: square;">
+      <li>A comment helps the programmer or non-programmers to understand the purpose and explains the complexity of program segments. 
+    </li>
+    <li>There are two ways in which comments can be used in a program. 
+    </li>
+    <li>The first is single line comments and the second is block comment.
+    </li>
+    <li>Single line comments start with the symbol //. 
+    </li>
+    <li>
+        The text between the symbol // and the end of the line is a comment.
+        <ul>
+            // Explains the process of the main() method
+        </ul>
+    </li>
+    <li>
+        Block comments start with the symbol /* on a starting line and can be extended to any number of lines and the block comment ends by the */ symbol. 
+    </li>
+    <li>
+        The text placed between the pair of symbols /* and */ are treated as comments and the compiler ignores those lines.
+        <ul>
+            /*<br>
+             To introduce the basic elements of a Java<br>
+             in the program FirstProgram.java.<br>
+            */
+
+        </ul>
+    </li>
+</ul>
+<h4>Understanding Keyboard Input</h4>
+<ul style="list-style-type: square;">
+    <li>Input to be given to the program is made simple with the use of Scanner class API. 
+    </li>
+    <li>Scanner class is a predefined class used to receive values for the variables 
+    </li>
+    <li>The usage of the Scanner class API will explain the purpose of API and can be thought of as an example for API learning.
+    </li>
+    <li>
+        The Scanner class is defined with a number of variables and methods.
+    </li>
+</ul>
+<div class="image">
+    <img src="./kshitij/img16.png">
+</div>
+<br>
+<div class="image">
+    <img src="./kshitij/img17.png">
+</div>
+  </p>
+</div>
+<hr class="featurette-divider">
+<footer class="container">
+  <p class="float-end"><a href="#">Back to top</a></p>
+  <p style="padding-left: 3.5cm;">&copy; Kshitij Kumar Sharma &middot; <a href="https://www.linkedin.com/in/kshitij-kr-sharma-338517190" target="_blank">Profile</a> &middot; <a href="./donate.html" target="_blank">Donate</a></p>
+</footer>
+</body>
+</html>

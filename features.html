@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Characteristics </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+/* Style the side navigation */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  padding-top: 1.5cm;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(105, 95, 95);
+  overflow-x: hidden;
+}
+p {
+  text-align: justify;
+}
+.image {
+  padding-left: 5cm;
+}
+
+/* Side navigation links */
+.sidenav a {
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+  padding-right: 3cm;
+}
+</style>
+<link href="./assets/carousel.css" rel="stylesheet">
+<link href="./assets/style.css" rel="stylesheet">
+<link href="./assets/size.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">KKS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./blogs.html">Blogs</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li> -->
+        </ul>
+        <form class="d-flex">
+          <a class="btn btn-outline-success" href="./donate.html" role="button">Donate</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+<br>
+<div class="sidenav">
+  <a href="./blogs.html">Origin of Java</a>
+  <a href="./challanges.html">Challanges of Java</a>
+  <a href="./features.html">Features of Java</a>
+  <a href="./JDK.html">JDK</a>
+  <a href="./JRE.html">JRE</a>
+  <a href="./JVM.html">JVM</a>
+  <a href="./oop.html">Object Oriented Programming</a>
+  <a href="./joop.html">Java Object Oriented Programming</a>
+  <a href="./program_devlopment.html">Java Program development</a>
+
+
+</div>
+
+<div class="content">
+  <h2>Characteristics of Java </h2>
+  <p>
+    <ul style="list-style-type: square;">
+        <li>Simple</li>
+        <li>Object-oriented</li>
+        <li>Compiled</li>
+        <li>Architectural neutral</li> 
+        <li>Multi-threaded</li> 
+        <li>Garbage collection</li> 
+        <li>Robust </li>
+        <li>Extensible language</li>
+    </ul>
+  </p>
+  <p>
+    JAVA has become enormously popular over time and has remained in most of the surveys among top three popular programming
+    languages over two decades. This popularity of JAVA, and its acceptance can be attributed to its features and design. As
+    stated in the Java language white paper by Sun, Java is simple, object-oriented, distributed, interpreted, robust,
+    secure, architecture-neutral, portable, high-performance, multithreaded, and dynamic. Let’s analyze these often-used
+    buzzwords.
+    <div style="padding-left: 300px;"><img src="./bin/images/img1.jpg" height="350px"></div>
+    <h3 id="pt2">Simple:</h3>
+    <p>Java is very simple to learn with quite clean and easily understandable syntax. It is based on C++ programming
+    language(hence easier to switch from C++) . Many complicated but rarely used concepts like operator overloading and
+    explicit pointers, etc, has been removed from Java. It provides Automatic Garbage Collection in Java hence no need to
+    remove unreferenced objects. These are some of the features that makes Java, a simple programming language.</p>
+    <h3 id="pt3">Object-oriented:</h3>
+    <p>Java is a pure object oriented programming language. Without class concept, not a single a program can be written in
+    Java. Organizing software in combination of different types of objects that incorporates data as well as well as
+    behaviour is object-oriented. The methodology of object oriented programming language(OOPs), simplifies the development
+    and maintenance of software by providing some rules.
+    Basic concepts of OOPs are:</p>
+    <ul style="list-style-type: square;">
+      <li>Object</li>
+      <li>Class</li>
+      <li>Polymorphism</li>
+      <li>Abstraction</li>
+      <li>Encapsulation</li>
+    </ul>
+    <div style="padding-left: 100px;"><img src="./bin/images/img4.png" height="300px"></div>
+    <h3 id="pt4">Platform Independent:</h3>
+    <p>Java provides WORA(write once run anywhere) feature. Java is a platform independent programming language as it is
+    different from other languages like C,C++, etc, which are compiled into platform specific machines. This platform can be
+    the hardware or software environment where the program runs. Java itself provides-platform based platform. This
+    software-based platform runs on top of other hardware-based platforms. Its components are Java Runtime Environment and
+    Application Programming Interface(API). Java code is compiled by the compiler and converted into bytecode which is then
+    converted into machine language and hence this enables it to run on run on multiple platforms, for example, Windows,
+    Linux, Sun Solaris, Mac/OS, etc.</p>
+    <h3 id="pt5">Security:</h3>
+    <p>Java is known very well for the security it provides. Virus free system can be developed. It is secure as:</p>
+    <ul style="list-style-type: square;">
+      <li>The concept of explicit pointer is not there.</li>
+      <li>Classloader is a part of JRE which is used to load classes into the JVM dynamically, which adds security by separating
+      the package for the classes of the local file system from those that are imported from network sources.</li>
+      <li>It runs inside a virtual machine sandbox which servers as a protective cover.</li>
+      <li>There is bytecode verier that looks for illegal code that is potential voilater of access right to objects.</li>
+      <li>Security manager that keeps tab on the resources that can be accessed by a class.</li>
+    </ul>
+    <p>Some security can also be provided by an application developer explicitly through SSL, JAAS, Cryptography, etc.</p>
+    <h3 id="pt6">Robust:</h3>
+    <p>Java is strong or robust as:</p>
+    <ul style="list-style-type: square;">
+      <li>It uses strong memory management.</li>
+      <li>There is automatic garbage collection in java which runs on the Java Virtual Machine to get rid of objects which are not
+      being used by a Java application anymore.</li>
+      <li>There are exception handling and the type checking mechanism in Java. All these points make Java robust.</li>
+      <li>There is bytecode verier that looks for illegal code that is potential voilater of access right to objects.</li>
+      <li>There is a lack of pointers that avoids security problems and make usability simpler.</li>
+    </ul>
+    <h3 id="pt7">Portable:</h3>
+    <p>The property of platform independence facilitated by WORA property provides java with the feature of high portability.
+    It facilitates us to carry the Java bytecode to any platform.</p>
+    <h3>Architecture-neutral:</h3>
+    <p>Java is architecture neutral because there are no implementation dependent features, for example, the size of primitive
+    types is fixed. In C programming, int data type occupies 2 bytes of memory for 32-bit architecture and 4 bytes of memory
+    for 64-bit architecture. However, it occupies 4 bytes of memory for both 32 and 64-bit architectures in Java.</p>
+    <h3 id="pt8">Compiled and Interpreted language:</h3>
+    <p>Java is considered to be both a compiled and an interpreted language because its source code is first compiled into a
+    binary byte-code. This byte-code runs on the Java Virtual Machine (JVM), which is usually a software-based interpreter.
+    The use of compiled byte-code allows the interpreter (the virtual machine) to be small and efficient (and nearly as fast
+    as the CPU running native, compiled code).</p>
+    <div style="padding-left: 100px;"><img src="./bin/images/img2.png"></div>
+    <h3 id="pt9">High-performance:</h3>
+    <p>Java code is faster than other High level languages as Java bytecode is "close" to native code. It is still a little bit
+    slower than a compiled language (e.g., C++). Java is an interpreted language that is why it is slower than compiled
+    languages, e.g., C, C++, etc.</p>
+    <h3 id="pt10">Distributed:</h3>
+    <p>Java is distributed because it facilitates users to create distributed applications in Java. Many systems allow us to
+    run the code remotely written in a domain-specific language, and Java distributes the code that gets easily compatible
+    with the programming environment. RMI and EJB are used for creating distributed applications. This feature of Java makes
+    us able to access files by calling the methods from any machine on the internet.</p>
+    <h3 id="pt11">Multi-threaded:</h3>
+    <p>A thread is like a separate program, executing concurrently. We can write Java programs that deal with many tasks at
+    once by defining multiple threads.
+    Java is a multi-threaded programming language which means we can develop multi-threaded program using Java. A
+    multi-threaded program contains two or more parts that can run concurrently and each part can handle a different task at
+    the same time making optimal use of the available resources specially when your computer has multiple CPUs.</p>
+    <div style="padding-left: 100px;"><img src="./bin/images/img3.png" height="300px"></div>
+    <h3 id="pt12">Dynamic:</h3>
+    <p>Java is a dynamic programming language. Dynamic loading of class is supported by it, i.e , it supports loading of class
+    on demand. It also supports functions from its native languages, i.e., C and C++. Objects and members can be created
+    dynamically. Java supports dynamic compilation and automatic memory management (garbage collection).
+  </p>
+
+</div>
+<hr class="featurette-divider">
+<footer class="container">
+  <p class="float-end"><a href="#">Back to top</a></p>
+  <p style="padding-left: 3.5cm;">&copy; Abhas Kumar &middot; <a href="#" target="_blank">Profile</a> &middot; <a href="./donate.html" target="_blank">Donate</a></p>
+</footer>
+</body>
+</html>

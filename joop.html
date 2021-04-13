@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Java OOP </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sidenav {
+  height: 100%;
+  width: 200px;
+  padding-top: 1.5cm;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(105, 95, 95);
+  overflow-x: hidden;
+}
+p {
+  text-align: justify;
+}
+.image {
+  padding-left: 5cm;
+}
+.sidenav a {
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+mark{
+	    background-color: white;
+	}
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+  padding-right: 3cm;
+}
+</style>
+<link href="./assets/carousel.css" rel="stylesheet">
+<link href="./assets/style.css" rel="stylesheet">
+<link href="./assets/size.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">KKS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./blogs.html">Blogs</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li> -->
+        </ul>
+        <form class="d-flex">
+          <a class="btn btn-outline-success" href="./donate.html" role="button">Donate</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+<br>
+<div class="sidenav">
+  <a href="./blogs.html">Origin of Java</a>
+  <a href="./challanges.html">Challanges of Java</a>
+  <a href="./features.html">Features of Java</a>
+  <a href="./JDK.html">JDK</a>
+  <a href="./JRE.html">JRE</a>
+  <a href="./JVM.html">JVM</a>
+  <a href="./oop.html">Object Oriented Programming</a>
+  <a href="./joop.html">Java Object Oriented Programming</a>
+  <a href="./program_devlopment.html">Java Program development</a>
+
+</div>
+<div class="content">
+   <center>
+<h1><b><u>Java Object-Oriented Programming</u></b></h1></center>
+  
+        <dl>
+          <dt><b><u><mark id="POP">What is Procedural Oriented Programing ?</u></b></dt>
+          <dd>Procedural programming is a programming paradigm, derived from imperative programming, based on the concept of the procedure call. Procedures (a type of routine or subroutine) simply contain a series of computational steps to be carried out. Any given procedure might be called at any point during a program's execution, including by other procedures or itself. The first major procedural programming languages appeared circa 1957–1964, including Fortran, ALGOL, COBOL, PL/I and BASIC. Pascal and C were published circa 1970–1972.</dd>
+        </dl>
+        <dl>
+          <dt><b><u><mark  id="oops">What is  Object-oriented programming ?</u></b></dt>
+          <dd>Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which can contain data and code: data in the form of fields (often known as attributes or properties), and code, in the form of procedures (often known as methods).
+         A feature of objects is that an object's own procedures can access and often modify the data fields of itself (objects have a notion of this or self). In OOP, computer programs are designed by making them out of objects that interact with one another. OOP languages are diverse, but the most popular ones are class-based, meaning that objects are instances of classes, which also determine their types.</dd>
+         <div class="image">
+        <img src="./assets/object oriented.jpeg" >
+      </div>
+
+        </dl>
+          <dl>
+
+          <dt><b><u><mark  id="pp">Object-oriented programming has several advantages over procedural programming :</u></b></dt>
+          <centre><dd>*OOP is faster and easier to execute.</dd>
+          <dd>*OOP provides a clear structure for the programs</dd>
+          <dd>*OOP helps to keep the Java code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug.</dd>
+          <dd>*OOP makes it possible to create full reusable applications with less code and shorter development time.</dd></centre>
+        </dl>
+
+        <tr>
+<h2><b><u><mark  id="OOP">The Object Oriented Programming(OOP) concepts of Java are:</u></b></h2>
+        <ul style="list-style-type:disc">
+          <li><b><u><div class="objects" id="Class">Class</u></b></li>
+<p>A Class is like an object constructor, or a "blueprint" for creating objects.A class is a user defined blueprint or prototype from which objects are created.  It represents the set of properties or methods that are common to all objects of one type.A class can have any number of methods to access the value of various kinds of methods.<br>
+
+<b><u>Create a Class</u></b><br>
+To create a class, use the keyword class:<br>
+<b><u>Main.java</u></b><br>
+Create a class named "Main" with a variable x:<br>
+public class Main <br>
+{<br>
+  int x = 5;<br>
+}<br></p>
+
+          <li><b><u><mark  id="objects">Objects</u></b></li>
+<p>In Java, an object is created from a class.It is a basic unit of Object-Oriented Programming and represents the real life entities.  A typical Java program creates many objects, which as you know, interact by invoking methods. We have already created the class named <b><u>MyClass</u></b>, so now we can use this to create objects.
+To create an object of MyClass, specify the class name, followed by the object name, and use the keyword <b><u>new</u></b>.When an object of a class is created, the class is said to be instantiated. All the instances share the attributes and the behavior of the class. But the values of those attributes, i.e. the state are unique for each object. A single class may have any number of instances.<br>
+</p>
+<b><u>Example</u></b><br>
+Create an object called "myObj" and print the value of x:<br>
+<ul>public class Main <br>
+{<br>
+  int x = 5;<br>
+  public static void main(String[] args)<br>
+{<br>
+    Main myObj = new Main();<br>
+    System.out.println(myObj.x);<br>
+  }<br>
+}</ul><br>
+<b><u>Multiple Objects</u></b><br>
+You can create multiple objects of one class:<br>
+<b><u>Example</u></b><br>
+Create two objects of Main:<br>
+<ul>public class Main <br>
+{<br>
+  int x = 5;<br>
+  public static void main(String[] args) <br>
+{<br>
+    Main myObj1 = new Main();  // Object 1<br>
+    Main myObj2 = new Main();  // Object 2<br>
+    System.out.println(myObj1.x);<br>
+    System.out.println(myObj2.x);<br>
+  }<br>
+}</ul><br></p>
+          <li><b><u><mark  id="Inheritance">Inheritance</u></b></li>
+<p>Inheritance in Java is a mechanism in which one object acquires all the properties and behaviors of a parent object. It is an important part of OOPs (Object Oriented programming system).
+The idea behind inheritance in Java is that you can create new classes that are built upon existing classes. When you inherit from an existing class, you can reuse methods and fields of the parent class. Moreover, you can add new methods and fields in your current class also.
+Inheritance represents the <b>IS-A</b> relationship which is also known as a parent-child relationship.<br>
+<b><u>Why use inheritance in java ?</u></b><br>
+*For Method Overriding (so runtime polymorphism can be achieved).<br>
+*For Code Reusability.<br>
+The <b>extends</b> keyword indicates that you are making a new class that derives from an existing class. The meaning of "extends" is to increase the functionality.
+In the terminology of Java, a class which is inherited is called a parent or superclass, and the new class is called child or subclass.<br>
+<b><u>Types of Inheritance</u></b><br>
+There are Various types of inheritance in Java:<br>
+<br><b><u>Single Inheritance:</u></b><br>
+<p>In Single Inheritance one class extends another class (one class only).<br>
+Single Inheritance example program in Java<br>
+<div class="image">
+ <img src="./assets/single.jpeg"  style="float: right;width: 250px;height: 250px;">
+</div>
+<ul>Class A<br>
+{<br>
+   public void methodA()<br>
+   {<br>
+     System.out.println("Base class method");<br>
+   }<br>
+}<br>
+
+Class B extends A<br>
+{<br>
+   public void methodB()<br>
+   {<br>
+     System.out.println("Child class method");<br>
+   }<br>
+   public static void main(String args[])<br>
+   {<br>
+     B obj = new B();<br>
+     obj.methodA(); //calling super class method<br>
+     obj.methodB(); //calling local method<br>
+  }<br>
+}</ul><br>
+<br><b><u>Multilevel Inheritance</u></b><br>
+Multilevel Inheritance example program in Java<br>
+In Multilevel Inheritance, one class can inherit from a derived class. Hence, the derived class becomes the base class for the new class.It’s pretty clear with the diagram that in Multilevel inheritance there is a concept of grand parent class. <br>
+<div class="image">
+	<img src="./assets/multilevel.jpeg"  style="float: right;width: 250px;height: 250px;">
+</div>
+<ul>Class X<br>
+{<br>
+   public void methodX()<br>
+   {<br>
+     System.out.println("Class X method");<br>
+   }<br>
+}<br>
+Class Y extends X<br>
+{<br>
+public void methodY()<br>
+{<br>
+System.out.println("class Y method");<br>
+}<br>
+}<br>
+Class Z extends Y<br>
+{<br>
+   public void methodZ()<br>
+   {<br>
+     System.out.println("class Z method");<br>
+   }<br>
+   public static void main(String args[])<br>
+   {<br>
+     Z obj = new Z();<br>
+     obj.methodX(); //calling grand parent class method<br>
+     obj.methodY(); //calling parent class method<br>
+     obj.methodZ(); //calling local method<br>
+  }<br>
+}</ul><br>
+<br><b><u>Hierarchical Inheritance</u></b><br>
+In such kind of inheritance one class is inherited by many sub classes. When a class has more than one child classes (sub classes) or in other words more than one child classes have the same parent class then this type of inheritance is known as hierarchical inheritance<br>
+<b><u>Example of Hierarchical Inheritance</u></b><br>
+We are writing the program where class B, C and D extends class A.<br>
+<div class="image">
+<img src="./assets/hierarachical.jpeg"  style="float: right;width: 400px;height: 400px;">
+</div>
+<ul>class A<br>
+{<br>
+   public void methodA()<br>
+   {<br>
+      System.out.println("method of Class A");<br>
+   }<br>
+}<br>
+class B extends A<br>
+{<br>
+   public void methodB()<br>
+   {<br>
+      System.out.println("method of Class B");<br>
+   }<br>
+}<br>
+class C extends A<br>
+{<br>
+  public void methodC()<br>
+  {<br>
+     System.out.println("method of Class C");<br>
+  }<br>
+}<br>
+class D extends A<br>
+{<br>
+  public void methodD()<br>
+  {<br>
+     System.out.println("method of Class D");<br>
+  }<br>
+}<br>
+class JavaExample<br>
+{<br>
+  public static void main(String args[])<br>
+  {<br>
+     B obj1 = new B();<br>
+     C obj2 = new C();<br>
+     D obj3 = new D();<br>
+     //All classes can access the method of class A<br>
+     obj1.methodA();<br>
+     obj2.methodA();<br>
+     obj3.methodA();<br>
+  }<br>
+}<br>
+<b><u>Output:</u></b><br>
+
+method of Class A<br>
+method of Class A<br>
+method of Class A<br>
+</ul><br><b><u>Question ) Why multiple inheritance is not supported in java?</u></b><br>
+<b><u>Answer )</u></b>To reduce the complexity and simplify the language, multiple inheritance is not supported in java.
+
+Consider a scenario where A, B, and C are three classes. The C class inherits A and B classes. If A and B classes have the same method and you call it from child class object, there will be ambiguity to call the method of A or B class.
+
+Since compile-time errors are better than runtime errors, Java renders compile-time error if you inherit 2 classes. So whether you have same method or different, there will be compile time error.
+<ul>
+class A<br>
+{  <br>
+void msg()<br>
+{<br>
+System.out.println("Hello");<br>
+}<br>  
+}  <br>
+class B<br>
+{<br>  
+void msg()<br>
+{<br>
+System.out.println("Welcome");<br>
+}<br>  
+}  <br>
+class C extends A,B<br>
+{//suppose if it were<br>  
+   
+ public static void main(String args[])
+{<br>  
+   C obj=new C();<br>  
+   obj.msg();//Now which msg() method would be invoked?  <br>
+}  <br>
+}</ul> <br>
+          <li><b><u><mark  id="Polymorphism">Polymorphism</u></b></li>
+<b>Polymorphism</b> in Java is a concept by which we can perform a single action in different ways. Polymorphism is derived from 2 Greek words: poly and morphs. The word "poly" means many and "morphs" means forms. So polymorphism means many forms.
+There are two types of polymorphism in Java:<b>compile-time polymorphism</b> and <b>runtime polymorphism</b>. We can perform polymorphism in java by method overloading and method overriding.
+If you overload a static method in Java, it is the example of compile time polymorphism. Here, we will focus on runtime polymorphism in java.<br>
+<b><u>Runtime Polymorphism in Java</u></b><br>
+Runtime polymorphism or Dynamic Method Dispatch is a process in which a call to an overridden method is resolved at runtime rather than compile-time.
+In this process, an overridden method is called through the reference variable of a superclass. The determination of the method to be called is based on the object being referred to by the reference variable.
+Let's first understand the upcasting before Runtime Polymorphism.<br>
+
+<b>Upcasting</b><br>
+If the reference variable of Parent class refers to the object of Child class, it is known as upcasting.<br>
+<b>Example:</b><br>
+class A{}<br> 
+class B extends A{}  <br>
+A a=new B();//upcasting <br> 
+For upcasting, we can use the reference variable of class type or an interface type.<br>
+ <b>For Example:</b><br>
+
+interface I{}  <br>
+class A{}  <br>
+class B extends A implements I{}  <br>
+Here, the relationship of B class would be:<br>
+
+B IS-A A<br>
+B IS-A I<br>
+B IS-A Object<br>
+Since Object is the root class of all classes in Java, so we can write B IS-A Object.<br>
+<b>Example of Java Runtime Polymorphism</b><br>
+In this example, we are creating two classes Bike and Splendor. Splendor class extends Bike class and overrides its run() method. We are calling the run method by the reference variable of Parent class. Since it refers to the subclass object and subclass method overrides the Parent class method, the subclass method is invoked at runtime.
+Since method invocation is determined by the JVM not compiler, it is known as runtime polymorphism.<br>
+<ul>class Bike<br>
+{  <br>
+  void run()<br>
+{<br>
+System.out.println("running");<br>
+}  <br>
+}  <br>
+class Splendor extends Bike<br>
+{  <br>
+  void run(){System.out.println("running safely with 60km");<br>
+}  <br>
+  public static void main(String args[])<br>
+{  <br>
+    Bike b = new Splendor();//upcasting  <br>
+    b.run();  <br>
+  }  <br>
+}  <br>
+<b><u>Output:</u></b><br>
+running safely with 60km.</ul><br><br>
+          <li><b><u><mark  id="Abstraction">Abstraction</u></b></li>
+Data abstraction is the process of hiding certain details and showing only essential information to the user.
+Abstraction can be achieved with either abstract classes or interfaces.The abstract keyword is a non-access modifier, used for classes and methods:<br>
+
+<b><u>Abstract class</u></b>: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
+<br>
+<b><u>Abstract method</u></b>: can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).<br>
+An abstract class can have both abstract and regular methods:<br>
+<ul>
+abstract class Animal <br>
+{<br>
+  public abstract void animalSound();<br>
+  public void sleep() <br>
+{<br>
+    System.out.println("Zzz");<br>
+  }<br>
+}<br>
+ </ul>
+ 
+From the example above, it is not possible to create an object of the Animal class:<br>
+
+Animal myObj = new Animal(); // will generate an error<br>
+To access the abstract class, it must be inherited from another class. Let's convert the Animal class we used in the Polymorphism chapter to an abstract class:<br>
+<b><u>Example</u></b><br>
+<ul>
+// Abstract class<br>
+abstract class Animal<br>
+ {<br>
+  // Abstract method (does not have a body)<br>
+  public abstract void animalSound();<br>
+  // Regular method<br>
+  public void sleep() 
+{<br>
+    System.out.println("Zzz");<br>
+  }<br>
+}<br>
+
+// Subclass (inherit from Animal)<br>
+class Pig extends Animal <br>
+{<br>
+  public void animalSound() <br>
+{<br>
+    // The body of animalSound() is provided here<br>
+    System.out.println("The pig says: wee wee");<br>
+  }<br>
+}<br>
+
+class Main<br> 
+{<br>
+  public static void main(String[] args) <br>
+{<br>
+    Pig myPig = new Pig(); // Create a Pig object<br>
+    myPig.animalSound();<br>
+    myPig.sleep();<br>
+  }<br>
+}   <br>
+<b><u>Output</u></b><br>
+The pig says: wee wee<br>
+Zzz</ul><br>
+<b><u>Advantages of Abstraction</u></b><br>
+
+*It reduces the complexity of viewing the things.<br>
+*Avoids code duplication and increases reusability.<br>
+*Helps to increase security of an application or program as only important details are provided to the user.<br><br>
+       <li><b><u><mark  id="Encapsulation">Encapsulation</u></b></li><br>
+The meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users. To achieve this, you must:<br>
+*declare class variables/attributes as private.<br>
+*provide public get and set methods to access and update the value of a private variable.<br>
+<h3><b><u>Get and Set</u></b></h3>
+You learned from the previous chapter that private variables can only be accessed within the same class (an outside class has no access to it). However, it is possible to access them if we provide public get and set methods.<br>
+The get method returns the variable value, and the set method sets the value.<br>
+Syntax for both is that they start with either get or set, followed by the name of the variable, with the first letter in upper case:<br>
+
+<b><u>Example</u></b><br>
+<ul>public class Person<br> 
+{<br>
+  private String name; // private = restricted access<br>
+
+  // Getter<br>
+  public String getName()<br>
+ {<br>
+    return name;<br>
+  }<br>
+
+  // Setter<br>
+  public void setName(String newName)<br>
+ {<br>
+    this.name = newName;<br>
+  }<br>
+}</ul><br><br>
+ 
+ 
+<b><u>Example explained</u></b><br>
+*The get method returns the value of the variable name.<br>
+*The set method takes a parameter (newName) and assigns it to the name variable.<br>
+*The this keyword is used to refer to the current object.<br>
+
+However, as the name variable is declared as private, we cannot access it from outside this class:<br>
+
+<b><u>Example</u></b><br>
+<ul>public class Main <br>
+{<br>
+  public static void main(String[] args)<br>
+ {<br>
+    Person myObj = new Person();<br>
+    myObj.name = "John";  // error<br>
+    System.out.println(myObj.name); // error <br>
+  }<br>
+}<br>
+If the variable was declared as public, we would expect the following output:<br>
+
+John<br><br>
+However, as we try to access a private variable, we get an error:<br>
+
+MyClass.java:4: error: name has private access in Person<br>
+    myObj.name = "John";<br>
+         ^
+MyClass.java:5: error: name has private access in Person<br>
+    System.out.println(myObj.name);<br>
+                  ^
+2 errors<br><br>
+Instead, we use the getName() and setName() methods to acccess and update the variable:<br>
+</ul>
+<b><u>Example</u></b>
+<ul>public class Main <br>
+{<br>
+  public static void main(String[] args)<br>
+ {<br>
+    Person myObj = new Person();<br>
+    myObj.setName("John"); // Set the value of the name variable to "John"<br>
+    System.out.println(myObj.getName());<br>
+  }<br>
+}<br>
+
+<b><u>Output:</u></b> 
+John</ul><br>
+<h3><b><u>Why Encapsulation?</u></b></h3>
+Better control of class attributes and methods</u></b>
+Class attributes can be made read-only (if you only use the get method), or write-only (if you only use the set method)</u></b>
+Flexible: the programmer can change one part of the code without affecting other parts</u></b>
+Increased security of data</u></b><br>
+
+ <br><li><b><u><mark  id="Static Binding">Static Binding</u></b></li>
+When type of the object is determined at compiled time(by the compiler), it is known as static binding.
+If there is any private, final or static method in a class, there is static binding.<br>
+
+<b><u>Example of static binding</u></b><br>
+<ul>class Dog<br>
+{  
+ private void eat()<br>
+{<br>
+System.out.println("dog is eating...");<br>
+}<br>  
+  
+ public static void main(String args[])<br>
+{<br>  
+  Dog d1=new Dog();  <br>
+  d1.eat();  <br>
+ }  <br>
+} </ul> <br>
+
+<br><li><b><u><mark  id="Dynamic Binding">Dynamic Binding</u></b></li>
+When type of the object is determined at run-time, it is known as dynamic binding.<br>
+
+<b><u>Example of dynamic binding</u></b><br>
+<ul>class Animal<br>
+{<br>  
+ void eat()<br>
+{<br>
+System.out.println("animal is eating...");<br>
+}  <br>
+}  <br>
+  
+class Dog extends Animal<br>
+{<br>  
+void eat()<br>
+{<br>
+System.out.println("dog is eating...");<br>
+} <br> 
+  
+ public static void main(String args[])<br>
+{<br>  
+  Animal a=new Dog();<br>  
+  a.eat();  <br>
+ }  <br>
+} </ul><br> 
+In the above example object type cannot be determined by the compiler, because the instance of Dog is also an instance of Animal. So compiler doesn't know its type, only its base type.<br>
+        </ul>
+        </tr>
+</div>
+<hr class="featurette-divider">
+<footer class="container">
+  <p class="float-end"><a href="#">Back to top</a></p>
+  <p style="padding-left: 3.5cm;">&copy; Abhirup Chakraborty &middot; <a href="https://www.linkedin.com/in/abhirup-chakraborty-790b511b5" target="_blank">Profile</a> &middot; <a href="./donate.html" target="_blank">Donate</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JRE </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the side navigation */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  padding-top: 1.5cm;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(105, 95, 95);
+  overflow-x: hidden;
+}
+p {
+  text-align: justify;
+}
+.image {
+  padding-left: 5cm;
+}
+
+/* Side navigation links */
+.sidenav a {
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+  padding-right: 3cm;
+}
+</style>
+<link href="./assets/carousel.css" rel="stylesheet">
+<link href="./assets/style.css" rel="stylesheet">
+<link href="./assets/size.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">KKS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./blogs.html">Blogs</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li> -->
+        </ul>
+        <form class="d-flex">
+          <a class="btn btn-outline-success" href="./donate.html" role="button">Donate</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+<br>
+<div class="sidenav">
+  <a href="./blogs.html">Origin of Java</a>
+  <a href="./challanges.html">Challanges of Java</a>
+  <a href="./features.html">Features of Java</a>
+  <a href="./JDK.html">JDK</a>
+  <a href="./JRE.html">JRE</a>
+  <a href="./JVM.html">JVM</a>
+  <a href="./oop.html">Object Oriented Programming</a>
+  <a href="./joop.html">Java Object Oriented Programming</a>
+  <a href="./program_devlopment.html">Java Program development</a>
+
+
+</div>
+
+<div class="content">
+    <h2>Java Runtime Environment - JRE</h2>
+    <p>
+        The Java Runtime Environment, or JRE, is a software layer that runs on top of a computer’s operating system software and provides the class libraries and other resources that a specific Java program needs to run.
+    </p>
+    <p>The JRE combines Java code created using the JDK with the necessary libraries required to run it on a JVM and then creates an instance of the JVM that executes the resulting program. JVMs are available for multiple operating systems, and programs created with the JRE will run on all of them. In this way, the Java Runtime Environment is what enables a Java program to run in any operating system without modification.</p>
+    <h3>Working of JRE</h3>
+    <p>
+        The JDK and JRE interact with one another to create a sustainable runtime environment that enables the seamless execution of Java-based applications in virtually any operating system. The following make up the JRE runtime architecture:
+    </p>
+    <h4>ClassLoader</h4>
+    <p>The Java ClassLoader dynamically loads all classes necessary to run a Java program. Since Java classes are only loaded into memory when they're required, the JRE uses ClassLoaders to automate this process on demand.</p>
+    <h4>Bytecode verifier</h4>
+    <p>The bytecode verifier ensures the format and accuracy of Java code before it passes to the interpreter. In the event that code violates system integrity or access rights, the class will be considered corrupted and won't be loaded.</p>
+    <h4>Interpreter</h4>
+    <p>After the bytecode successfully loads, the Java interpreter creates an instance of the JVM that allows the Java program to be executed natively on the underlying machine.</p>
+
+</div>
+
+<hr class="featurette-divider">
+<footer class="container">
+  <p class="float-end"><a href="#">Back to top</a></p>
+  <p style="padding-left: 3.5cm;">&copy; Chirag Chaudhuri &middot; <a href="https://www.linkedin.com/in/chirag-chaudhuri/" target="_blank">Profile</a> &middot; <a href="./donate.html" target="_blank">Donate</a></p>
+</footer>
+</body>
+</html>
